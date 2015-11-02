@@ -1,0 +1,15 @@
+
+--- Script parsing start ---
+
+  Note: switch to strict mode
+
+  [  1] CBC_EXT_CREATE_OBJECT
+
+--- Function parsing start ---
+
+  Note: legacy (non-strict) argument definition
+
+Parse error 'Non strict argument definition.' at line: 6 col: 19
+
+--- Script parsing end ---
+

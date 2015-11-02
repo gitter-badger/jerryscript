@@ -1,0 +1,81 @@
+
+--- Script parsing start ---
+
+
+--- Function parsing start ---
+
+  Note: switch to strict mode
+
+  [  0] CBC_RETURN_WITH_UNDEFINED
+
+Final byte code dump:
+
+  Maximum stack depth: 0
+  Literal encoding: small
+  Argument range end: 0
+  Register range end: 0
+  Identifier range end: 0
+  Literal range end: 0
+
+   0 : CBC_RETURN_WITH_UNDEFINED
+   1 : CBC_RETURN_WITH_UNDEFINED
+
+Byte code size: 2 bytes
+
+--- Function parsing end ---
+
+
+--- Function parsing start ---
+
+  Note: legacy (non-strict) argument definition
+
+  [  1] CBC_PUSH_IDENT idx:1->ident(obj)
+  [  0] CBC_EXT_WITH_CREATE_CONTEXT
+  [  1] CBC_PUSH_IDENT idx:2->ident(next_statement)
+  [  0] CBC_POP
+  [  0] CBC_CONTEXT_END
+
+Final byte code dump:
+
+  Maximum stack depth: 2
+  Literal encoding: small
+  Argument range end: 1
+  Register range end: 1
+  Identifier range end: 3
+  Literal range end: 3
+
+   0 : CBC_PUSH_IDENT idx:1(ident)->ident(obj)
+   2 : CBC_EXT_WITH_CREATE_CONTEXT offset:7(->9)
+   5 : CBC_PUSH_IDENT idx:2(ident)->ident(next_statement)
+   7 : CBC_POP
+   8 : CBC_CONTEXT_END
+   9 : CBC_RETURN_WITH_UNDEFINED
+
+Byte code size: 10 bytes
+
+--- Function parsing end ---
+
+  [  1] CBC_PUSH_IDENT idx:5->ident(next_statement)
+  [  0] CBC_POP_BLOCK
+
+Final byte code dump:
+
+  Maximum stack depth: 4
+  Literal encoding: small
+  Argument range end: 0
+  Register range end: 3
+  Identifier range end: 4
+  Literal range end: 6
+
+   0 : CBC_DEFINE_FUNCTION idx:0(reg)->var_ident(strict_mode) idx:4(lit)->function
+   3 : CBC_DEFINE_FUNCTION idx:1(reg)->var_ident(non_strict_mode) idx:5(lit)->function
+   6 : CBC_PUSH_IDENT idx:3(ident)->ident(next_statement)
+   8 : CBC_POP_BLOCK
+   9 : CBC_RETURN_WITH_UNDEFINED
+
+Byte code size: 10 bytes
+
+Script parsing successfully completed. Total byte code size: 22 bytes
+
+--- Script parsing end ---
+
